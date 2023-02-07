@@ -1,19 +1,14 @@
-
-const string = "Hello";
+const string = ""
 
 const reverseString = function(string) {
-    stringLength = string.length;
-    console.log(stringLength);
+    const stringLength = (string.length - 1)
+    let newString = "";
+    for (let i = stringLength; i >= 0; i--) {
+        lastChar = string.substr(i, 1)
+        newString += lastChar
+    }
+    return newString;
+}
 
-    // for (let i = (string.length() - 1); i == 0 ; i--) {
-    ////    let singleChar = string.slice(i);
-   //     newString = singleChar.concat();
-    //}
-    // return newString;
-};
 
-
-console.log(reverseString())
-
-// Do not edit below this line
-module.exports = reverseString;
+reverseString()
