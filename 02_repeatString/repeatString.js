@@ -1,6 +1,3 @@
-const string = ""
-const num = ""
-
 const repeatString = function(string, num) {
     let repeater = string
     if (num === 0) {
