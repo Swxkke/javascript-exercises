@@ -1,19 +1,19 @@
-const removeFromArray = function() {
-    const mainArr = [1, 2, 3, 4];
-    const deleter = 4;
-    let delIndex = mainArr.indexOf(deleter);
+const removeFromArray = function(mainArr = [1, 2, 3, 4], remover = (3, 2)) {
+    let arrayLength = (mainArr.length - 1)
 
-    console.log(delIndex)
+    for (i = 0; i < arrayLength; i++) {
+        let arrObj = mainArr[i];
+        if (arrObj === remover) {
+            mainArr.splice(i, 1);
+            continue;
+        } else {
+
+        }
+    }
+    return mainArr;
 };
 
 console.log(removeFromArray())
 
 // Do not edit below this line
 module.exports = removeFromArray;
-
-if (mainArr === deleter) {
-    let delIndex = mainArr.indexOf(deleter);
-    if (delIndex > -1) {
-        mainArr.splice(delIndex, 1)
-    }
-}
