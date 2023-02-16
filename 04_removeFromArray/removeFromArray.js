@@ -1,16 +1,16 @@
-const removeFromArray = function(mainArr = [1, 2, 3, 4], remover = [2,3]) {
-    let arrayLength = (mainArr.length)
-    let removerLength = (remover.length -1)
+const removeFromArray = function(mainArr = [1, 2, 3, 4], remover = [3, 2]) {
+    let arrayLength = (mainArr.length);
 
 
-    for (i = 0; i < arrayLength; i++) {
-        let arrObj = mainArr[i];
-        if (arrObj === remover) {
-            mainArr.splice(i, 1);
-            console.log(i)
-        } else {
-            console.log(i)
-            continue;
+    for (let remObj in remover) {
+        remChar = remover[remObj]
+        for (i = 0; i < arrayLength; i++) {
+            arrObj = mainArr[i];
+            if (remChar === arrObj) {
+                mainArr.splice(i, 1);
+            } else {
+                continue;
+            }
         }
     }
     return mainArr;
@@ -19,4 +19,4 @@ const removeFromArray = function(mainArr = [1, 2, 3, 4], remover = [2,3]) {
 console.log(removeFromArray())
 
 // Do not edit below this line
-//module.exports = removeFromArray;
+module.exports = removeFromArray;
