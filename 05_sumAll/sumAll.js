@@ -1,5 +1,6 @@
-const sumAll = function(par1 = 5,4, par2 = 1) {
+const sumAll = function(par1 = 1, par2 = 4) {
     let sum = 0;
+    let paras = par1 + par2
     if (par1 < par2) {
         for (let i = par1; i <= par2; i++) {
             sum += i;
@@ -8,9 +9,6 @@ const sumAll = function(par1 = 5,4, par2 = 1) {
         for (let i = par2; i <= par1; i++) {
             sum += i;
         }
-    }
-    if (sum === NaN || sum === undefined || sum <= 0) {
-        sum = "ERROR";
     }
     return sum;
 };
