@@ -1,7 +1,8 @@
-const sumAll = function(par1 = "1", par2 = 5) {
+const sumAll = function(par1, par2) {
     let sum = 0;
-    
-    if (par1 > 0 && par2 > 0) {
+    if (!Number.isInteger(par1) || !Number.isInteger(par2)) {
+        sum = "ERROR";
+    } else if (par1 > 0 && par2 > 0) {
         if (par1 < par2) {
             for (let i = par1; i <= par2; i++) {
                 sum += i;
