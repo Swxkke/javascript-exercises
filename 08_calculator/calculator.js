@@ -1,24 +1,33 @@
-const add = function() {
+const add = function(a, b) {
+	let sum = a + b;
+  return sum;
+};
+
+const subtract = function(a, b) {
+	let sub = a - b
+  return sub;
+};
+
+const sum = function(sumArray) {
+  let equals = 0;
+  for (let number in sumArray) {
+    if (isNaN(number)) {
+      return equals;
+    } else {
+      equals += number
+    }
+  }
+};
+
+const multiply = function(a, b) {
+
+};
+
+const power = function(a, b) {
 	
 };
 
-const subtract = function() {
-	
-};
-
-const sum = function() {
-	
-};
-
-const multiply = function() {
-
-};
-
-const power = function() {
-	
-};
-
-const factorial = function() {
+const factorial = function(a, b) {
 	
 };
 
